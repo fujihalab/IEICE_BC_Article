@@ -28,35 +28,35 @@ $ sudo pip3 install pyld
 
 - Block explorer <https://blockexplorer.bloxberg.org/>
 
-- Validators <https://validators.bloxberg.org/bloxberg-dapps-validators>
+- Validators <https://validators.bloxberg.org/>
 
 
 
-## 永続証明の発行
+## 永続証明書の発行
 
 - 解説記事6.1節を参照
 
 ### 要約の計算
 
 ```
-$ sha256sum <証明したい電子ファイルの名前>
+$ sha256sum <存在を証明したいデータのファイル名>
 ```
 
 
 
-## 永続聡明の検証
+## 永続証明書の検証
 
 - 解説記事6.2節を参照
 
-### 証明書に埋め込まれたJSON形式のテキストファイル(bloxbergJSONCertificate)を抽出
+### 永続証明書に埋め込まれたJSON形式のテキストファイル(bloxbergJSONCertificate)を抽出
 
 ```
-$ pdfdetach -saveall <証明書のファイル名>
+$ pdfdetach -saveall <永続証明書のファイル名>
 
 $ cat bloxbergJSONCertificate|jq
 ```
 
-### 証明書のMerkle root (= tokenHash)の確認
+### 永続証明書とBloxbergブロックチェーンに記録されているMerkle root (= tokenHash)の確認
 
 ```
 $ python3 check_merkle_root.py bloxbergJSONCertificate
