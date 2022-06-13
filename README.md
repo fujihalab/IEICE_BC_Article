@@ -1,5 +1,16 @@
 # IEICE_BC_Article
 
+## 出版された記事のダウンロード先
+
+IEICE B-plus 2022夏号 No.61
+<https://www.ieice.org/~cs-edit/magazine/archive.html>
+
+「ブロックチェーン」を学んで，使ってみよう！
+藤原明広
+<https://www.jstage.jst.go.jp/article/bplus/16/1/16_30/_pdf>
+
+
+
 ## 動作確認環境
 
 - Ubuntu 20.04.3 LTS
@@ -8,11 +19,13 @@
 
 ### 補足
 
-- 証明の発行自体は上述の動作環境の用意は不要ですが，検証には必要になります．
+- 永続証明書の発行自体は上述の環境の準備は不要ですが，検証には必要になります．
 
-- MS Windowsでは，virtualboxにUbuntuをインストールするか，wslを使うとUbuntuと同等の環境が構築可能です（未確認）．
+- MS Windowsでは，wslを使うとUbuntuと同等の環境が構築可能です（未確認）．
 
 - Mac OSでも，brewを使えば環境構築可能だと思います（未確認）．
+
+- 他にもVirtualbox等を使ってUbuntuの仮想環境を構築する方法もあります．
 
 
 
